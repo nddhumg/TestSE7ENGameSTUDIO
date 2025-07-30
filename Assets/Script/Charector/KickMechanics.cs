@@ -72,6 +72,9 @@ public class KickMechanics : MonoBehaviour
 
     private void KickBall(GameObject ballKick)
     {
+        balls.Remove(ballKick);
+        if (balls.Count == 0)
+            UIManager.instance.HandleBtnKick(false);
         GameObject goal = FindGoal(ballKick.transform.position);
         float goalWidth = GameManager.instance.GoalWidth;
         Vector3 positionGoal = new Vector3(goal.transform.position.x, ballKick.transform.position.y, goal.transform.position.z + Random.Range(-goalWidth / 2, goalWidth / 2));

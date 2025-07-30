@@ -2805,7 +2805,7 @@ GameObject:
   - component: {fileID: 1883146221}
   - component: {fileID: 1883146220}
   m_Layer: 0
-  m_Name: Shoting
+  m_Name: Kick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

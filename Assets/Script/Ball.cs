@@ -21,6 +21,7 @@ public class Ball : MonoBehaviour
         this.positionTarget = positionTarget;
         direction = (positionTarget - transform.position).normalized;
         isGoal = true;
+        gameObject.layer = LayerMask.NameToLayer("Default");
         StartCoroutine(MoveTo());
     }
 
